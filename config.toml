@@ -1,0 +1,53 @@
+baseURL = 'http://example.org/'
+languageCode = 'fr-fr'
+title = 'My New Hugo Site'
+theme = 'archie'
+copyright = '© Vincent Garcia'
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginate=5
+
+[params]
+mode="toggle"
+useCDN=false
+subtitle = "👨‍💻 **Développeur** le jour, 🏃‍♂️ **coureur** la nuit et 👨‍👦‍👦 **papa** le temps qui reste."
+
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/intraordinaire"
+
+[[params.social]]
+name = "Strava"
+icon = "activity"
+url = "https://strava.com/athletes/intraordinaire"
+
+[[params.social]]
+name = "Spotify"
+icon = "music"
+url = "https://open.spotify.com/user/intraordinaire?si=992309dc21214833"
+
+
+[[menu.main]]
+name = "Accueil"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Photos"
+url = "/photos"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "À propos"
+url = "/a-propos"
+weight = 4
