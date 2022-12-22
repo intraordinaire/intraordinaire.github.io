@@ -15,6 +15,7 @@ mode="toggle"
 useCDN=false
 subtitle = "👨‍💻 **Développeur** le jour, 🏃‍♂️ **coureur** la nuit et 👨‍👦‍👦 **papa** le temps qui reste."
 customcss = ["css/override.css"]
+description = "Le site d'un passioné du développement, d'un papa un peu timbré et d'un coureur pas très rapide."
 
 [[params.social]]
 name = "GitHub"

@@ -1,3 +1,1 @@
-# rundev-blog
-
-Personal blog propulsed by Hugo
+Personal website propulsed by [Hugo](https://gohugo.io/)

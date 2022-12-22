@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	{{ partial "header.html" . }}
 	<body>
 		<div class="content">
@@ -12,9 +12,10 @@
 					{{- end -}}
 				</div>
 
-				<h1>Derniers articles</h1>
 				{{ $pages := where .Site.RegularPages "Type" "posts" }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+				{{ if gt $paginator.TotalPages 0 }}
+				<h1>Derniers articles</h1>
 				{{ range $paginator.Pages }}
 				<section class="list-item">
 					<h2 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h2>
@@ -24,6 +25,7 @@
 				</section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
+				{{ end }}
 
 				<h1>Dernières photos</h1>
 
@@ -44,6 +46,7 @@
 					{{ end }}
 					{{ end }}
 				</div>
+				<a class="readmore" href="/photos">Toutes les photos ⟶</a>
 			</main>
 			{{ partial "footer.html" . }}
 		</div>
