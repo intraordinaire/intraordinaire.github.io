@@ -54,6 +54,10 @@ a.readmore {
 
 .content figure {
     text-align: center;
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 100%;
+}
+
+.content figure img {
+    max-height: none;
 }
