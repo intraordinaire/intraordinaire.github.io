@@ -17,9 +17,16 @@ h2.title {
     background: transparent;
 }
 
-.image-grid a img {
+.image-grid a:hover figure {
+    box-shadow: 5px 5px 4px rgba(236, 236, 236, 0.5);
+}
+
+.content .image-grid a img {
     border: none;
-    width: auto;
+    width: max-content;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .image-grid figure {
@@ -28,6 +35,8 @@ h2.title {
     border: 3px solid #ececec;
     display: flex;
     flex-flow: column;
+    text-align: center;
+    background: #ececec;
 }
 
 .image-grid figure figcaption {
