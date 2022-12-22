@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'fr-fr'
-title = 'My New Hugo Site'
+title = 'Vincent Garcia'
 theme = 'archie'
 copyright = '© Vincent Garcia'
 # Code Highlight
@@ -14,7 +14,7 @@ paginate=5
 mode="toggle"
 useCDN=false
 subtitle = "👨‍💻 **Développeur** le jour, 🏃‍♂️ **coureur** la nuit et 👨‍👦‍👦 **papa** le temps qui reste."
-
+customcss = ["css/override.css"]
 
 [[params.social]]
 name = "GitHub"

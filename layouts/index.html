@@ -4,26 +4,49 @@
 	<body>
 		<div class="content">
 			{{ partial "head.html" . }}
-			
+
 			<main class="list">
 				<div class="site-description">
 					{{- if isset .Site.Params "subtitle" -}}
 					<p>{{ .Site.Params.Subtitle | markdownify }}</p>
 					{{- end -}}
 				</div>
-				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+
+				<h1>Derniers articles</h1>
+				{{ $pages := where .Site.RegularPages "Type" "posts" }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
 				<section class="list-item">
-					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
+					<h2 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h2>
 					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
 					<br>{{ template "partials/pagedescription.html" . }}
+					<a class="readmore" href="{{ .RelPermalink }}">Lire la suite ⟶</a>
 				</section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
+
+				<h1>Dernières photos</h1>
+
+				<div class="image-grid">
+					{{ with .Site.GetPage "/photos" }}
+					{{ range first 4 (sort .Data.Pages "Date" "desc")}}
+					<a href="{{ .Permalink }}" title="{{ .Content }}">
+						{{ $image := .Page.Resources.GetMatch .Params.image }}
+						{{ $imageTitle := .Title }}
+						{{ with $image }}
+						{{ $thumb := .Resize "400x" }}
+						<figure>
+							<img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+							<figcaption>{{ $imageTitle }}</figcaption>
+						</figure>
+						{{end}}
+					</a>
+					{{ end }}
+					{{ end }}
+				</div>
 			</main>
 			{{ partial "footer.html" . }}
 		</div>
-		
+
 	</body>
 </html>

@@ -1,0 +1,48 @@
+h2.title {
+    font-size: 1rem;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-grid a {
+    width: 49%;
+    border-bottom: none;
+}
+
+.image-grid a img {
+    border: none;
+    width: auto;
+}
+
+.image-grid figure {
+    width: 100%;
+    padding: 0;
+    border: 3px solid #ececec;
+    display: flex;
+    flex-flow: column;
+}
+
+.image-grid figure figcaption {
+    color: white;
+    background: black;
+    padding: 0;
+    text-indent: 5px;
+    font-size: 0.8rem;
+}
+
+.image-grid a:hover figure figcaption {
+    color: white;
+}
+
+ul.posts span.summary {
+    display: block;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+a.readmore {
+    font-size: 0.8rem;
+}

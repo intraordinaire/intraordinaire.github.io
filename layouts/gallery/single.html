@@ -1,15 +1,17 @@
 {{ define "main" }}
-<h1>{{ .Page.Title }}</h1>
-
+<div class="meta">Postée le {{ dateFormat "Jan 2, 2006" .Date }}</div>
+{{ $imageDesc := .Content | plainify }}
 {{ if and (isset .Params "image") .Params.image }}
     {{ $image := .Page.Resources.GetMatch .Params.image }}
+    {{ $imageTitle := .Title }}
     {{ with $image }}
         {{ $thumb := .Resize "1000x" }}
-        {{ printf `<img src="%s" alt="%s" class="img-responsive gallery-image">` $thumb.RelPermalink .Title | safeHTML }}
+        <figure>
+        {{ printf `<img src="%s" alt="%s" class="img-responsive gallery-image">` $thumb.RelPermalink $imageTitle | safeHTML }}
+            <figcaption>
+                <h4>{{ $imageDesc }}</h4>
+            </figcaption>
+        </figure>
     {{end}}
 {{ end }}
-
-{{ .Content }}
-{{ template "_internal/disqus.html" . }}
-
 {{ end }}
