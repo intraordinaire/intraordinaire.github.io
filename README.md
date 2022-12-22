@@ -1,2 +1,3 @@
 # rundev-blog
-Hugo personnal blog
+
+Personal blog propulsed by Hugo
