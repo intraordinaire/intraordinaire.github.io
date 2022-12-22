@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="meta">Postée le {{ dateFormat "Jan 2, 2006" .Date }}</div>
+<div class="meta">Capturée le {{ dateFormat "Jan 2, 2006" .Date }}</div>
 {{ $imageDesc := .Content | plainify }}
 {{ if and (isset .Params "image") .Params.image }}
     {{ $image := .Page.Resources.GetMatch .Params.image }}
