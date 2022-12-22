@@ -5,11 +5,16 @@ h2.title {
 .image-grid {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .image-grid a {
     width: 49%;
     border-bottom: none;
+    align-self: center;
+}
+.image-grid a:hover {
+    background: transparent;
 }
 
 .image-grid a img {
@@ -45,4 +50,10 @@ ul.posts span.summary {
 
 a.readmore {
     font-size: 0.8rem;
+}
+
+.content figure {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }

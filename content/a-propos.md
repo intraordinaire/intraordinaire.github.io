@@ -16,7 +16,7 @@ Certains diront que je suis fullstack.
 
 Mais je n'aime pas trop cette appellation, car c'est rare qu'une personne maîtrise tout, de l'applicatif à l'architecture en passant par la conception...
 
-Je fais du back, du front, et j'aime m'impliquer dans la conception et la réflexion métier du projet/produit.
+Je fais du back, du front, et j'aime m'impliquer dans la conception technique autant que dans la réflexion métier du projet/produit.
 
 ## Où en suis-je ?
 
