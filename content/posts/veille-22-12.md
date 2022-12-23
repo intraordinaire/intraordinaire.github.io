@@ -6,11 +6,11 @@ summary: "Quoi de neuf en décembre 2022 sur la toile ?"
 tags: [Veille, Dev]
 ---
 
-## Que s'est-il passé dans le monde du web ce mois ci ? 
+## Que s'est-il passé dans le monde du web ce mois-ci ? 
 
 ### PHP
 
- * Un article nous rappelant comment bien écrire un controlleur (ou le refactorer). C'est du Laravel, mais ça s'applique clairement à toutes les technos.
+ * Un article nous rappelant comment bien écrire un contrôleur (ou le refactorer). C'est du Laravel, mais ça s'applique clairement à toutes les technos.
     {{< articlelink href="https://medium.com/@macielthiago/laravel-your-controllers-should-look-like-this-c09ff9f40841" title="Laravel — Your controllers should look like this" >}}
  * PHP 8.2 est release, au programme : `readonly classes`, `constant` dans les `Traits`, `null, false, true` en type stand-alone, ...
     {{< articlelink href="https://www.php.net/releases/8.2/en.php" title="PHP 8.2 Release Announcement" >}}
@@ -49,15 +49,15 @@ query ($id: Int) {
 
 ### CSS
 
- * Quand on fait un peu de front, on est toujours confronté aux `media queries`. Cet article rentre dans le détail des possibilités et d'une bonne façon de les mettre en place.
+ * Quand on fait un peu de front, on est toujours confronté aux `media queries`. Cet article rentre dans le détail des possibilités et d'une bonne manière de les mettre en place.
    {{< articlelink href="https://stackdiary.com/css-media-queries/" title="A Practical Guide to CSS Media Queries">}}
 
 
 ### Autres
 
  * En ce moment, on a pas mal de sujets autour de la communication entre nos services, et donc pas mal de lectures sur les différents protocoles.
-Ici, un article plutôt complet sur `gRPC` vs `GraphQL`. Comme souvent, la conclusion est : ça dépend de l'usage. Mais il est toujours intéressant d'aller dans le détails des technologies.
+Ici, un article plutôt complet sur `gRPC` vs `GraphQL`. Comme souvent, la conclusion est : ça dépend de l'usage. Mais il est toujours intéressant d'aller dans le détail des technologies.
  {{< articlelink href="https://stackoverflow.blog/2022/11/28/when-to-use-grpc-vs-graphql/" title="When to use gRPC vs GraphQL" >}}
- * Vous aimez les Regex ? Moi j'adore ça. Voici un petit guide qui saura ravir les néophites comme les expérimentés !
+ * Vous aimez les Regex ? Moi, j'adore ça. Voici un petit guide qui saura ravir les néophytes comme les expérimentés !
    {{< articlelink href="https://www.thecodingdev.com/2022/11/the-ultimate-guide-for-regular.html" title=" The Ultimate Guide for Regular Expressions (Regex) " >}}
 * C'est décembre, alors le truc à ne pas manquer c'était le {{< newtabref href="https://adventofcode.com/" title="Advent of Code" >}} !
