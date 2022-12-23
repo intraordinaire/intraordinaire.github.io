@@ -1,0 +1,11 @@
+
+
+<span class="article_link">
+    <a href='{{ .Get "href" }}' rel="noopener" target="_blank" title='{{ .Get "title" }}'>
+        {{ if .Get "link" }}
+            {{ .Get "link" }} ⟶
+        {{else}}
+            Voir l'article ⟶
+        {{end}}
+    </a>
+</span>
