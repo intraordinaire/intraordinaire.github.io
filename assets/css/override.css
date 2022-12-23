@@ -1,3 +1,6 @@
+section.body p {
+    font-family: 'Roboto Mono', monospace;
+}
 h2.title {
     font-size: 1rem;
 }
@@ -18,7 +21,7 @@ h2.title {
 }
 
 .image-grid a:hover figure {
-    box-shadow: 5px 5px 4px rgba(236, 236, 236, 0.5);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .content .image-grid a img {
@@ -69,4 +72,21 @@ a.readmore {
 
 .content figure img {
     max-height: none;
+}
+
+.article_link {
+    display: block;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+article .body li {
+    padding-top: 1rem;
+}
+
+.post-tags {
+    padding-top: 2rem;
+}
+.post-tags li {
+    display: inline;
 }
