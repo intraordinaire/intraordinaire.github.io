@@ -5,5 +5,5 @@ title = "Plage des Amiets @ Cléder"
 type = "gallery"
 +++
 
-Levé du soleil depuis la plage des Amiets @ Cléder, France
+Lever du soleil depuis la plage des Amiets @ Cléder, France
 
