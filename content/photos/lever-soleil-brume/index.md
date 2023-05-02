@@ -6,4 +6,3 @@ type = "gallery"
 +++
 
 Lever de soleil brumeux @ Cléder, France
-
